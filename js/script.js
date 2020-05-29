@@ -6,11 +6,11 @@ let personalMovieDB={
     count:""
 };
 
-do {
-    
+while(numberOfFilms==null || numberOfFilms=="" || numberOfFilms.length <= 10 ){
     numberOfFilms = prompt('Какой фильм любимый?','');
-    
-} while(numberOfFilms==null || numberOfFilms=="" || numberOfFilms.length >= 10 );
+}
+
+
 
  personalMovieDB.count = prompt('Сколько фильмов глянул?','');
  
@@ -21,6 +21,12 @@ do {
  }else{
      alert("ты наркоман");
  }
+
+//  do {
+    
+//     numberOfFilms = prompt('Какой фильм любимый?','');
+    
+// } while(numberOfFilms==null || numberOfFilms=="" || numberOfFilms.length >= 10 );
 
 // while(numberOfFilms != '' && numberOfFilms.length =50) {
 //     console.log(str.length);
