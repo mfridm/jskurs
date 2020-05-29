@@ -6,10 +6,15 @@ let personalMovieDB={
     count:""
 };
 
-while(numberOfFilms==null || numberOfFilms=="" || numberOfFilms.length <= 10 ){
-    numberOfFilms = prompt('Какой фильм любимый?','');
+for (;;){
+    if(numberOfFilms==null || numberOfFilms=="" || numberOfFilms.length <= 10){
+        numberOfFilms = prompt('Какой фильм любимый?','');
+        
+     }else{
+        break;
+     }
+     
 }
-
 
 
  personalMovieDB.count = prompt('Сколько фильмов глянул?','');
@@ -21,6 +26,12 @@ while(numberOfFilms==null || numberOfFilms=="" || numberOfFilms.length <= 10 ){
  }else{
      alert("ты наркоман");
  }
+
+
+ // while(numberOfFilms==null || numberOfFilms=="" || numberOfFilms.length <= 10 ){
+//     numberOfFilms = prompt('Какой фильм любимый?','');
+// }
+
 
 //  do {
     
