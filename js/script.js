@@ -1,29 +1,67 @@
 "use strict";
 
-const str = "teSt";
+const numberOfFilms = prompt('Сколько фильмов вы уже посмотрели','');
 
 
-// console.log(str[2]='d');
+let personalMovieDB ={
+count: numberOfFilms,
+movies:{},
+actors:{},
+genres:[],
+privat:false
+};
 
-// console.log(str.toUpperCase());
-// console.log(str.toLowerCase());
-// console.log(str);
+const a = prompt('Последний фильм смотрел какой?',''),
+b = prompt('Какая оценка?',''),
+c = prompt('Последний фильм смотрел какой?',''),
+d = prompt('Какая оценка?','');
 
-const fruit = "Some fruit";
-console.log(fruit.indexOf("fruit")); // с какого символа начало
 
-const logg = "Hello World";
+personalMovieDB.movies[a]=b;
+personalMovieDB.movies[c]=d;
 
-// console.log(logg.slice(6,11)); // какой кусок вывести из строки "с/по"
+function showMyDB(){
+   if(personalMovieDB.privat==false) {
+    console.log(personalMovieDB);
+   }else{
+    console.log("Huj Tam TRUE");
+   }
+    
+}
 
-// console.log(logg.substring(6,11)); // аналог слайса
+showMyDB();
 
-console.log(logg.substr(6,3)); // какой кусок вывести из строки "начиная и сколько символов от начала"
+let arr=[];
+let MyQuestion;
+function writeYourGenres(){
+    for(let i=1;i<4;i++){
+        MyQuestion=prompt('укажи свой любимый жанр','');
+        arr.push(MyQuestion);
+    }
+    console.log(arr);
+}
 
-const num=12.2;
-console.log(Math.round(num)); // округление чисел
+writeYourGenres();
 
-const test = "12.2px";
-console.log(parseInt(test)); // вытаскиваем целое число из стринг
+// function calc(a,b){
+//     return(a+b);
+// }
 
-console.log(parseFloat(test));// выстаскиваем число с запятой из стринг
+// console.log(calc(4,3));
+// console.log(calc(5,6));
+// console.log(calc(10,6));
+
+// function ret(){
+//     let num=50;
+//     return num;
+// }
+
+// const anotherNum= ret();
+// console.log(anotherNum);
+
+// const logger = function(){
+// console.log("Hello")
+// };
+// logger();
+
+// const calc=(a,b)=>a+b;
