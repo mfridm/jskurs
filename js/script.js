@@ -1,35 +1,29 @@
 "use strict";
 
-let num=20;
+const str = "teSt";
 
-function showFirstMessage(text){
-    console.log(text);
-    let num =10;
-    console.log(num);
-}
 
-showFirstMessage("Hello");
-console.log(num);
+// console.log(str[2]='d');
 
-// function calc(a,b){
-//     return(a+b);
-// }
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+// console.log(str);
 
-// console.log(calc(4,3));
-// console.log(calc(5,6));
-// console.log(calc(10,6));
+const fruit = "Some fruit";
+console.log(fruit.indexOf("fruit")); // с какого символа начало
 
-function ret(){
-    let num=50;
-    return num;
-}
+const logg = "Hello World";
 
-const anotherNum= ret();
-console.log(anotherNum);
+// console.log(logg.slice(6,11)); // какой кусок вывести из строки "с/по"
 
-const logger = function(){
-console.log("Hello")
-};
-logger();
+// console.log(logg.substring(6,11)); // аналог слайса
 
-const calc=(a,b)=>a+b;
+console.log(logg.substr(6,3)); // какой кусок вывести из строки "начиная и сколько символов от начала"
+
+const num=12.2;
+console.log(Math.round(num)); // округление чисел
+
+const test = "12.2px";
+console.log(parseInt(test)); // вытаскиваем целое число из стринг
+
+console.log(parseFloat(test));// выстаскиваем число с запятой из стринг
