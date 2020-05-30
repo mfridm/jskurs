@@ -1,59 +1,35 @@
 "use strict";
 
+let num=20;
 
-let numberOfFilms;
-let personalMovieDB={
-    count:""
-};
-
-for (;;){
-    if(numberOfFilms==null || numberOfFilms=="" || numberOfFilms.length <= 10){
-        numberOfFilms = prompt('Какой фильм любимый?','');
-        
-     }else{
-        break;
-     }
-     
+function showFirstMessage(text){
+    console.log(text);
+    let num =10;
+    console.log(num);
 }
 
+showFirstMessage("Hello");
+console.log(num);
 
- personalMovieDB.count = prompt('Сколько фильмов глянул?','');
- 
- if(personalMovieDB.count<10){
-     alert("ну ты слабак");
- }else if(personalMovieDB.count>=10 && personalMovieDB.count<=30){
-     alert("ну норм ты мужик");
- }else{
-     alert("ты наркоман");
- }
-
-
- // while(numberOfFilms==null || numberOfFilms=="" || numberOfFilms.length <= 10 ){
-//     numberOfFilms = prompt('Какой фильм любимый?','');
+// function calc(a,b){
+//     return(a+b);
 // }
 
+// console.log(calc(4,3));
+// console.log(calc(5,6));
+// console.log(calc(10,6));
 
-//  do {
-    
-//     numberOfFilms = prompt('Какой фильм любимый?','');
-    
-// } while(numberOfFilms==null || numberOfFilms=="" || numberOfFilms.length >= 10 );
+function ret(){
+    let num=50;
+    return num;
+}
 
-// while(numberOfFilms != '' && numberOfFilms.length =50) {
-//     console.log(str.length);
-// }
+const anotherNum= ret();
+console.log(anotherNum);
 
-// do {
-//     console.log(`${str.lenght}`);
-    
-// }
-// while (numberOfFilms>=50);
+const logger = function(){
+console.log("Hello")
+};
+logger();
 
-// for (let i=1; i<0; i++){
-//     if(numberOfFilms){
-//         // break;
-//         continue;
-//     }
-//     console.log(i);
-    
-// }
+const calc=(a,b)=>a+b;
