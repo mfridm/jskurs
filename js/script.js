@@ -1,29 +1,43 @@
 "use strict";
 
-function first(){
-    //вывод с задержкой
-    setTimeout(function(){
-        console.log(1);
-    }, 500);
-}
+const options= {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors:{
+        border: 'black',
+        background: 'red'
+    },
+    makeTest: function(){
+        console.log("Test");
+    }
+};
 
+options.makeTest();
 
+const {border, background} = options.colors;
+console.log(options.colors);
 
-function second(){
-    console.log(2);
-}
+// console.log(Object.keys(options).length);
 
-first();
-second();
+// console.log(options['colors']['border']);
 
-function learnJS(lang, callback){
-    console.log(`я учу: ${lang}`);
-    callback();
-}
+//delete options.name; //удаление ключа
 
-function done(){
+// console.log(options);
+// let counter =0;
+// for(let key in options){
+//     if(typeof(options[key]) === 'object'){ //проверяем есть ли объекты в объекте
+//         for (let i in options[key]){ //если есть объекты внутри то выводим все их содержимое
+//             console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
+//             counter++; // два уровня погружения. ки обращается к ключам подряд, и обращается ко второму уровню глубины
+//         }
+//     }else{
+//         console.log(`Свойство ${key} имеет значение ${options[key]}`);
+//         counter++;
+//     }
     
-    console.log('я прошел этот урок');
-}
+// }
+// console.log(counter);
 
-learnJS('JavaScript', done); // передаем 1 аргумент текстом, второй всю функцию
+
