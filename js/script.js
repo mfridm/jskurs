@@ -35,7 +35,7 @@ let arr=[];
 let MyQuestion;
 function writeYourGenres(){
     for(let i=1;i<4;i++){
-        MyQuestion=prompt('укажи свой любимый жанр','');
+        MyQuestion=prompt(`укажи свой любимый жанр ${i}`,'');
         arr.push(MyQuestion);
     }
     console.log(arr);
