@@ -1,7 +1,7 @@
 "use strict";
 
 const arr=[2,13,26,8,10];
-arr.sort(compareNum)
+arr.sort(compareNum);
 console.log(arr);
 
 function compareNum(a,b){
