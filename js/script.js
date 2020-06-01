@@ -1,5 +1,6 @@
 "use strict";
 
+<<<<<<< 5710852d928f6691d7ac3ef4f3594f6b64ace58b
 const options= {
     name: 'test',
     width: 1024,
@@ -37,6 +38,31 @@ console.log(options.colors);
 //         counter++;
 //     }
     
+=======
+const arr=[2,13,26,8,10];
+arr.sort(compareNum);
+console.log(arr);
+
+function compareNum(a,b){
+    return a-b;
+}
+// arr[99]=0;
+// console.log(arr.length);
+// console.log(arr);
+
+// ФорИч переберает все в аррее. аргументы в функции любые.
+// первый это содержимое, второй индекс, третий имя массива
+// arr.forEach(function(item, i, arr){
+//     console.log(`${i}: ${item} vnutri massiva ${arr}`);
+// });
+
+// arr.pop();
+// arr.push(10);
+// console.log(arr);
+
+// for (let i=0;i<arr.length;i++){
+//     console.log(arr[i]);
+>>>>>>> Lection 21 массивы,псевдомассивы,сортировка
 // }
 // console.log(counter);
 
