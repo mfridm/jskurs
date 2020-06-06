@@ -1,43 +1,13 @@
 "use strict";
 
-//1)
-    console.log(typeof(String(null)));
-    console.log(typeof(String(4)));
+// let x =5;
+// alert(x++); // если инкремент до вывода то 6 а так х стал после алерта 6
+// alert("1"[0]); //угадал 1
+//alert(null || 2&&4||4); //ravno 4
+//alert(+"infity");
 
-//2)
-console.log(typeof((5+''))); // при сложение со строкой всегда строка тип данных
+// console.log([]+false-null+true); //"NaN" все что добавляется к пустоте все строка
+// console.log([]+1+2); //12 т.к. превращает все в строку при добавлении к пустому массиву
 
-const num = 5;
-console.log("https://vk.com/catalog/" + num);
-const fontSize=26 + 'px';
-
-// To Number
-
-//1)
-
-console.log(typeof(Number('4')));
-
-//2)
-console.log(typeof(+'5'));
-
-//3)
-console.log(typeof(parseInt("15px", 10)));
-
-let answer = +prompt("Hello","");
-
-// to boolean
-// 0,'', null, undefined,NaN; // это все фолс
-1)
-let switcher = null;
-if(switcher){
-    console.log('working...');
-}
-switcher = 1;
-if(switcher){
-    console.log('working...');
-}
-2)
-console.log(typeof(Boolean('4')));
-
-3)
-console.log(typeof(!!"444")); // превратили в булеан
+//alert("1"[0]); // выведет 1 т.к. индекс 0 это единичка
+console.log(2 && 1 && null && 0 && undefined);
